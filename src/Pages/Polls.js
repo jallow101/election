@@ -42,7 +42,7 @@ const Polls = () => {
           <h1 className="flex justify-around align-center text-lg text-orange-400 font-bold font-serif ">
             Party Votes
           </h1>
-          <Form admin={admin} constituency={constituency} />
+          <Form admin={admin} constituency={constituency} setConsituency={setConstituency} />
         </>
       ) : (
         <h1 className="flex justify-around align-center text-lg text-orange-400 font-bold font-serif ">

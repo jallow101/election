@@ -22,7 +22,12 @@ const Dropdown = ({ data, setAdmin, setConsituency, type }) => {
     setConsituency(value);
   }
 
- 
+  useEffect(() => {
+    
+    return () => {
+      setConsituency("")
+    }
+  }, [option])
 
   return (
     <Menu as="div" className="relative inline-block text-left">

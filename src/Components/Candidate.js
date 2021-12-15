@@ -2,7 +2,7 @@ import React from "react";
 
 const Candidate = ({ color, party, candidate, votes, photo }) => {
   return (
-    <figure className={color ? `bg-${color} shadow-md rounded-xl p-8 md:p-0 container-space-around`: "bg-white-400 shadow-md rounded-xl p-8 md:p-0 container-space-around"}>
+    <figure className={color ? `bg-${color} shadow-lg rounded-xl p-8 md:p-0 container-space-around`: "bg-white-400 shadow-md rounded-xl p-8 md:p-0 container-space-around"}>
       <img
         className="w-32 h-32 rounded-full mx-auto object-cover"
         src={photo}

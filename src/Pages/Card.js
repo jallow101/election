@@ -9,6 +9,7 @@ const Card = ({ data }) => {
       {data.map((party) => (
         <div className="flex-1">
           <Candidate
+            key={party.name}
             party={party.name}
             candidate={party.candidate}
             color={party.color}
