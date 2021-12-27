@@ -68,17 +68,17 @@ function App() {
     },
   ];
 
-  useEffect(() => {
-    const getConstituency = async () => {
-      const db = getFirestore(app);
-      const data = await getDocs(collectionGroup(db, "constituencies"));
-      setConstituency(data.docs.map((doc) => ({ ...doc.data() })));
-      //console.log(" me ", constituency);
-    };
+  // useEffect(() => {
+  //   const getConstituency = async () => {
+  //     const db = getFirestore(app);
+  //     const data = await getDocs(collectionGroup(db, "constituencies"));
+  //     setConstituency(data.docs.map((doc) => ({ ...doc.data() })));
+  //     //console.log(" me ", constituency);
+  //   };
 
-    getConstituency();
-    console.log(" nre me ", constituency);
-  }, []);
+  //   getConstituency();
+  //   console.log(" nre me ", constituency);
+  // }, []);
 
   return (
     <>
@@ -114,9 +114,9 @@ function App() {
 
                 {/* <Warning /> */}
 
-                <div className="container  mx-auto px-4">
+                {/* <div className="container  mx-auto px-4">
                   <Standing />
-                </div>
+                </div> */}
 
                 <div>
                   <Map/>
